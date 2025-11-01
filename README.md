@@ -4,6 +4,8 @@
 
 [Start Now (On Apify)](https://apify.com/doliz/rednote-scraper)
 
+[Start Now (Local deployment)](https://hub.docker.com/r/kinifine/rednote-scraper)
+
 ## ✨ 功能
 
 该采集器支持以下功能：
