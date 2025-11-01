@@ -26,21 +26,21 @@
 | `self_info`         | 个人用户信息2     | 0.001$ / 次     | /                                                                                         |
 | `keyword_trending`  | 关键词趋势(猜你想搜) | 0.001$ / 次     | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/keyword_trending.png)  |
 | `keyword_recommend` | 关键词推荐       | 0.001$ / 次     | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/keyword_recommend.png) |
-| `mentions`          | 评论和@        | 0.001$ / items | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/mentions.png)          |
-| `likes`             | 赞和收藏        | 0.001$ / items | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/likes.png)             |
-| `follows`           | 新增关注        | 0.001$ / items | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/follows.png)           |
+| `mentions`          | 评论和@        | 0.001$ / item | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/mentions.png)          |
+| `likes`             | 赞和收藏        | 0.001$ / item | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/likes.png)             |
+| `follows`           | 新增关注        | 0.001$ / item | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/follows.png)           |
 | `homefeed_category` | 首页推荐-分类     | 0.001$ / 次     | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/homefeed_category.png) |
-| `homefeed`          | 首页推荐        | 0.001$ / items | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/homefeed.png)          |
+| `homefeed`          | 首页推荐        | 0.001$ / item | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/homefeed.png)          |
 | `search_filter`     | 搜索过滤        | 0.001$ / 次     | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/search_filter.png)     |
-| `search_note`       | 搜索笔记        | 0.001$ / items | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/search_note.png)       |
-| `search_user`       | 搜索用户        | 0.001$ / items | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/search_user.png)       |
+| `search_note`       | 搜索笔记        | 0.001$ / item | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/search_note.png)       |
+| `search_user`       | 搜索用户        | 0.001$ / item | ![](https://github.com/lofe-w/rednote-scraper-public/raw/main/imgs/search_user.png)       |
 | `user_info`         | 用户信息        | 0.001$ / 次     | 根据用户ID获取某用户信息                                                                             |
-| `user_note`         | 用户发布的笔记     | 0.001$ / items | 根据用户ID获取某用户的笔记                                                                            |
-| `user_like_note`    | 用户赞过的笔记     | 0.001$ / items | 根据用户ID获取某用户赞过的笔记                                                                          |
-| `user_collect_note` | 用户收藏的笔记     | 0.001$ / items | 根据用户ID获取某用户收藏的笔记                                                                          |
+| `user_note`         | 用户发布的笔记     | 0.001$ / item | 根据用户ID获取某用户的笔记                                                                            |
+| `user_like_note`    | 用户赞过的笔记     | 0.001$ / item | 根据用户ID获取某用户赞过的笔记                                                                          |
+| `user_collect_note` | 用户收藏的笔记     | 0.001$ / item | 根据用户ID获取某用户收藏的笔记                                                                          |
 | `note_info`         | 笔记信息        | 0.001$ / 次     | 根据笔记ID获取笔记信息                                                                              |
-| `get_comment`       | 获取一级评论      | 0.001$ / items | 根据笔记ID获取一级评论                                                                              |
-| `get_sub_comment`   | 获取二级评论      | 0.001$ / items | 根据笔记ID和一级评论ID获取二级评论                                                                       |
+| `get_comment`       | 获取一级评论      | 0.001$ / item | 根据笔记ID获取一级评论                                                                              |
+| `get_sub_comment`   | 获取二级评论      | 0.001$ / item | 根据笔记ID和一级评论ID获取二级评论                                                                       |
 | `like_note`         | 点赞笔记        | 0.005$ / 次     | 根据笔记ID点赞笔记                                                                                |
 | `dislike_note`      | 取消点赞笔记      | 0.005$ / 次     | 根据笔记ID取消点赞笔记                                                                              |
 | `collect_note`      | 收藏笔记        | 0.005$ / 次     | 根据笔记ID收藏笔记                                                                                |
@@ -49,9 +49,9 @@
 | `delete_comment`    | 删除评论        | 0.005$ / 次     | 删除已发布的评论                                                                                  |
 | `like_comment`      | 点赞评论        | 0.005$ / 次     | 点赞某评论                                                                                     |
 | `dislike_comment`   | 取消点赞评论      | 0.005$ / 次     | 取消点赞某评论                                                                                   |
-| `search_topic`      | 搜索话题        | 0.001$ / items | 搜索话题                                                                                      |
+| `search_topic`      | 搜索话题        | 0.001$ / item | 搜索话题                                                                                      |
 | `create_topic`      | 创建话题        | 0.005$ / 次     | 创建话题                                                                                      |
-| `search_location`   | 搜索地点        | 0.001$ / items | 搜索地点                                                                                      |
+| `search_location`   | 搜索地点        | 0.001$ / item | 搜索地点                                                                                      |
 | `publish_note`      | 发布图文笔记      | 0.005$ / 次     | 发布图文笔记                                                                                    |
 
 ### ⚙️ `cookies`
@@ -646,13 +646,13 @@
 
 ### ⚙️ 发布图文笔记 (`publish_note`)
 
-| 字段 | 描述 | 默认值 |
-|---|---|---|
-| `publish_note_images` | 图片URL列表。 | `["https://raw.githubusercontent.com/github/explore/main/topics/python/python.png"]` |
-| `publish_note_title` | 标题。 | `"标题示例"` |
-| `publish_note_desc` | 正文内容。 | `"正文内容示例"` |
-| `publish_note_topics` | 话题列表。如果已有话题则直接引用，否则会创建新话题。 | `["topic1", "topic2"]` |
-| `publish_note_location` | 地点。 | `"北京"` |
+| 字段 | 描述                                                                                                                       | 默认值 |
+|---|--------------------------------------------------------------------------------------------------------------------------|---|
+| `publish_note_images` | 图片URL列表。                                                                                                                 | `["https://raw.githubusercontent.com/github/explore/main/topics/python/python.png"]` |
+| `publish_note_title` | 标题。                                                                                                                      | `"标题示例"` |
+| `publish_note_desc` | 正文内容。                                                                                                                    | `"正文内容示例... #topic1[话题]# #topic2[话题]#"` |
+| `publish_note_topics` | 话题列表。如果已有话题则直接引用, 如果没有话题会创建话题后引用。配置话题列表后(例如: ["topic1","topic2"]), 正文内容仍要引用(例如: 正文内容示例... #topic1[话题]# #topic2[话题]#)才会生效 | `["topic1", "topic2"]` |
+| `publish_note_location` | 地点。实际会根据入参选择最近(系统推荐)的地点, 可能与输入不完全一致                                                                                      | `"北京"` |
 
 入参示例
 ```json
@@ -661,7 +661,7 @@
     "cookies": "your cookies",
     "publish_note_images": ["https://raw.githubusercontent.com/github/explore/main/topics/python/python.png"],
     "publish_note_title": "标题示例",
-    "publish_note_desc": "正文内容示例",
+    "publish_note_desc": "正文内容示例... #topic1[话题]# #topic2[话题]#",
     "publish_note_topics": ["topic1", "topic2"],
     "publish_note_location": "北京"
 }
