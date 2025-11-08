@@ -13,17 +13,20 @@
 
 ---
 
-#### 1. 模仿人类行为，控制速度
+### 1. 模仿人类行为，控制速度
 真实用户浏览内容是缓慢且有间隔的。请将最大并发数**设置为 1**，并在可能的情况下增加请求间的延迟。这是模仿人类行为、避免被检测到的最重要步骤。
 
-#### 2. 使用备用账号并“养号”
+### 2. 使用备用账号并“养号”
 为防止主账号被限制，请务必使用一个备用小号。对于新注册的账号，建议先手动正常使用几天（如点赞、浏览、评论），这就是“养号”。这个过程能提高账号的信任度，显著降低被风控的概率。
 
-#### 3. 模拟真实网络环境
+### 3. 使用多个帐户（cookie）
+通过提供一个帐户cookie池，并通过它们轮换不同的请求。这有效地分配了请求负载，并显著降低了任何单个帐户由于高流量而受到速率限制的风险。
+
+### 4. 模拟真实网络环境
 Apify 默认的 IP 是服务器 IP，很容易被识别。您有两个选择来模拟真实用户的网络：
 
 *   **选项 A (云端方案): 使用住宅代理**
-    在 Apify 的代理配置中，选择**住宅代理 (Residential Proxy)** 并启用**会话粘性 (Sticky Session)** 功能。这能完美模拟一个真实用户在家里、用同一个 IP 稳定上网的环境。
+    在 Apify 的[代理配置](https://console.apify.com/proxy/usage)中，选择**[住宅代理 (Residential Proxy)](https://docs.apify.com/platform/proxy/residential-proxy)** 并启用**[会话 (Session)](https://docs.apify.com/platform/proxy/usage#sessions)** 功能。这能完美模拟一个真实用户在家里、用同一个 IP 稳定上网的环境。
 
 *   **选项 B (本地方案): 使用 Docker**
     您也可以在本地运行此工具，使用您自己的家庭网络。[Start Now (Local deployment)](https://hub.docker.com/r/kinifine/rednote-scraper)
